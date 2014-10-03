@@ -38,3 +38,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+#****** GEMAS AÑADIDAS ******
+# Usada para el proceso de atutenticación
+gem 'devise'
