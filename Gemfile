@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 #****** GEMAS AÑADIDAS ******
 # Usada para el proceso de atutenticación
 gem 'devise'
+
+# Usada para modificar los formularios
+gem 'simple_form'
