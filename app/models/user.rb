@@ -4,6 +4,16 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  # validación de los campos de usuario
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :profile_name, presence: true,
+                           uniqueness: true,
+                           format: {
+                            with: /a-zA-Z0-9_-/,
+                            message: "Must be formatted correctly."
+                           }
+
   # relación de tener muchos estatus
   has_many :statuses
 
