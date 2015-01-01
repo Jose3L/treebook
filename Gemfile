@@ -7,8 +7,11 @@ gem 'rails', '4.1.4'
 #Para cambiar la base de datos del modo de desarrollo al de producción
 group :development, :test do
 	gem 'sqlite3'
-	
 end
+group :production do
+	gem "pg"
+end
+
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
